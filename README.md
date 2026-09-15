@@ -19,7 +19,7 @@
 
 ## 📖 Overview
 
-![Network-Attack-Forecasting](/assets/Attack-Forecasting-2)
+![Network-Attack-Forecasting](/assets/Attack-Forecasting-2.png)
 **Conventional Intrusion Detection Systems (IDS)** are fundamentally **reactive** — they classify individual packets or flows *after* an attack has already begun. By the time an alert fires, damage is often done.
 
 This project introduces a **Temporal Network World Model** — an AI system that *learns* how networks behave over time and *predicts* future attack states minutes before they materialise, giving Security Operations Center (SOC) analysts actionable lead time to respond.
