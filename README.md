@@ -2,7 +2,7 @@
 
 # 🛡️ Network Attack Forecast System
 
-### AI-Powered Predictive Cyber Defence · Network World Model
+### AI-Powered Network Attack Forecast · World Model
 
 *Learn Network Behaviour → Forecast Future States → Explain Risk → Enable Early Defence*
 
