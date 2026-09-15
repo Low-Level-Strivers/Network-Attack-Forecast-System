@@ -340,43 +340,43 @@ The 1-minute state vector *S(t)* is constructed from these network flow statisti
 ### Network-Attack-Forecast-System Snapshots 
 
 ## Attack-Forecast-Dashboard-Home
-[Attack-Forecast-Dashboard-Home-Image](/assets/Dashboard-Home.png)
+![Attack-Forecast-Dashboard-Home-Image](/assets/Dashboard-Home.png)
 
 ## Upload-Network-CSV-Data
-[Network-CSV-Data-Uploading-Image](/assets/Upload-CSV.png)
+![Network-CSV-Data-Uploading-Image](/assets/Upload-CSV.png)
 
 ## Data-Cleaning-and-Preprocessing
-[Data-Cleaning-and-Preprocessing-Image](/assets/data-cleaning-and-preprocessing.png)
+![Data-Cleaning-and-Preprocessing-Image](/assets/data-cleaning-and-preprocessing.png)
 
 ## Network-State-Construction-from-Flows
-[Constructing-States-from-the-network-flows-Image](/assets/state-construction.png)
+![Constructing-States-from-the-network-flows-Image](/assets/state-construction.png)
 
 ## Initiating Attack-Forecast
-[Initiating-Attack-Forecast-from-Constructed-States-Image](/assets/Attack-Forecasting-1.png)
+![Initiating-Attack-Forecast-from-Constructed-States-Image](/assets/Attack-Forecasting-1.png)
 
 ## Forecasting Attack Stages
-[Forecasting-Future-Attack-Stages-Image](/assets/Attack-Forecasting-2.png)
+![Forecasting-Future-Attack-Stages-Image](/assets/Attack-Forecasting-2.png)
 
 ## Inspecting-Live-Network-State-Attributes
-[Inspecting-Live-Network-State-Attributes-Image](/assets/Network-State-Attributes.png)
+![Inspecting-Live-Network-State-Attributes-Image](/assets/Network-State-Attributes.png)
 
 ## MITRE-ATT&CK-Stage-Mapping
-[Mapping-States-to-MITRE-ATT&CK-Stages-Images](/assets/MITRE-Attack-Mapping.png)
+![Mapping-States-to-MITRE-ATT&CK-Stages-Images](/assets/MITRE-Attack-Mapping.png)
 
 ## View-Top-Risk-Contributing-SHAP-Features
-[View-SHAP-features-Image](/assets/top-risk-contributing-features.png)
+![View-SHAP-features-Image](/assets/top-risk-contributing-features.png)
 
 ## Inspect-Specific-State-Attributes
-[Inspect-Specific-State-Attribute-Image](/assets/Inspect-Specific-State.png)
+![Inspect-Specific-State-Attribute-Image](/assets/Inspect-Specific-State.png)
 
 ## Network-State-Trend-Analysis-Visualization
 ![Visualize-Network-State-Trend-Analysis-Image](assets/Network-State-Trend-Analysis.png)
 
 ## Operation-History-with-Metrics
-[Operation-Metrics-and-History-Image](assets/Operation-Logs.png)
+![Operation-Metrics-and-History-Image](assets/Operation-Logs.png)
 
 ## Sample-Attack-Label-Flows-from-CIC-IDS-2017-CSV
-[Sample-Attack-Label-Flows-Image](assets/Sample-CIC-IDS-2017-Data.png)
+![Sample-Attack-Label-Flows-Image](assets/Sample-CIC-IDS-2017-Data.png)
 
 
 ---
