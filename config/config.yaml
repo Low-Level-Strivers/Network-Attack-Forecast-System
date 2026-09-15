@@ -1,0 +1,79 @@
+# ==========================================================
+# Network Attack Forecast System - Global Configuration
+# ==========================================================
+
+project:
+  name: "predictive-cyber-defence"
+  version: "0.1.0"
+  description: "AI-Powered World Model for Forecasting Network Attack Progression"
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  state_vectors_dir: "data/state_vectors"
+  models_dir: "models"
+  logs_dir: "logs"
+
+windowing:
+  # Aggregation window duration in seconds (1 minute = 60s)
+  window_size_sec: 60
+  # Minimum flows required to construct a valid state window
+  min_flows_per_window: 1
+  # Default temporal sorting column
+  timestamp_column: "Timestamp"
+
+sequence:
+  # S(t - lookback_steps + 1) ... S(t): History observed by encoder
+  lookback_steps: 30
+  # K-step autoregressive rollout horizon S(t+1) ... S(t+forecast_horizon)
+  forecast_horizon: 5
+
+features:
+  # Behavioural features extracted for the 1-minute state vector S(t)
+  state_features:
+    - "flow_count"
+    - "unique_dst_ports"
+    - "unique_src_ports"
+    - "port_diversity_ratio"
+    - "total_fwd_packets"
+    - "total_bwd_packets"
+    - "packet_rate"
+    - "total_fwd_bytes"
+    - "total_bwd_bytes"
+    - "byte_rate"
+    - "mean_flow_duration"
+    - "mean_packet_length"
+    - "std_packet_length"
+    - "mean_flow_iat"
+    - "std_flow_iat"
+    - "fwd_packet_rate"
+    - "bwd_packet_rate"
+    - "syn_flag_count"
+    - "ack_flag_count"
+    - "rst_flag_count"
+    - "fin_flag_count"
+    - "psh_flag_count"
+    - "down_up_ratio_mean"
+    - "active_mean"
+    - "idle_mean"
+
+model:
+  name: "LSTMWorldModel"
+  latent_dim: 64
+  hidden_dim: 128
+  num_layers: 2
+  dropout: 0.2
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 50
+  # Multi-task loss balancing weights
+  loss_weights:
+    state_prediction: 1.0  # MSE loss for next state S(t+1)
+    risk_prediction: 1.0   # BCE loss for attack risk probability
+    stage_prediction: 0.5  # CrossEntropy loss for attack stage
+
+thresholds:
+  low_risk: 0.25
+  medium_risk: 0.50
+  high_risk: 0.75
+  lead_time_trigger_risk: 0.60
