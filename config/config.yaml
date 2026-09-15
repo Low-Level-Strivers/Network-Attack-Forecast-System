@@ -3,7 +3,7 @@
 # ==========================================================
 
 project:
-  name: "predictive-cyber-defence"
+  name: "Network Attack Forecast System"
   version: "0.1.0"
   description: "AI-Powered World Model for Forecasting Network Attack Progression"
 
