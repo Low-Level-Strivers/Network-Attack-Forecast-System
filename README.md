@@ -248,7 +248,7 @@ pip install -r requirements.txt
 ### 4. Prepare Dataset
 
 Download the **CIC-IDS2017** dataset from the [Canadian Institute for Cybersecurity](https://www.unb.ca/cic/datasets/ids-2017.html) and place CSV files in `data/raw/`:
-
+[CIC-IDS-2017-Monday-Dataset.csv](/assets/CIC-IDS-2017-Monday-Dataset.png)
 ```
 data/raw/
 ├── Monday-WorkingHours.pcap_ISCX.csv
@@ -334,6 +334,50 @@ The 1-minute state vector *S(t)* is constructed from these network flow statisti
 | 23 | `down_up_ratio_mean` | Downlink/Uplink traffic asymmetry |
 | 24 | `active_mean` | Mean active traffic interval |
 | 25 | `idle_mean` | Mean idle wait interval |
+
+---
+
+### Network-Attack-Forecast-System Snapshots 
+
+## Attack-Forecast-Dashboard-Home
+[Attack-Forecast-Dashboard-Home-Image](/assets/Dashboard-Home.png)
+
+## Upload-Network-CSV-Data
+[Network-CSV-Data-Uploading-Image](/assets/Upload-CSV.png)
+
+## Data-Cleaning-and-Preprocessing
+[Data-Cleaning-and-Preprocessing-Image](/assets/data-cleaning-and-preprocessing.png)
+
+## Network-State-Construction-from-Flows
+[Constructing-States-from-the-network-flows-Image](/assets/state-construction.png)
+
+## Initiating Attack-Forecast
+[Initiating-Attack-Forecast-from-Constructed-States-Image](/assets/Attack-Forecasting-1.png)
+
+## Forecasting Attack Stages
+[Forecasting-Future-Attack-Stages-Image](/assets/Attack-Forecasting-2.png)
+
+## Inspecting-Live-Network-State-Attributes
+[Inspecting-Live-Network-State-Attributes-Image](/assets/Network-State-Attributes.png)
+
+## MITRE-ATT&CK-Stage-Mapping
+[Mapping-States-to-MITRE-ATT&CK-Stages-Images](/assets/MITRE-Attack-Mapping.png)
+
+## View-Top-Risk-Contributing-SHAP-Features
+[View-SHAP-features-Image](/assets/top-risk-contributing-features.png)
+
+## Inspect-Specific-State-Attributes
+[Inspect-Specific-State-Attribute-Image](/assets/Inspect-Specific-State.png)
+
+## Network-State-Trend-Analysis-Visualization
+![Visualize-Network-State-Trend-Analysis-Image](assets/Network-State-Trend-Analysis.png)
+
+## Operation-History-with-Metrics
+[Operation-Metrics-and-History-Image](assets/Operation-Logs.png)
+
+## Sample-Attack-Label-Flows-from-CIC-IDS-2017-CSV
+[Sample-Attack-Label-Flows-Image](assets/Sample-CIC-IDS-2017-Data.png)
+
 
 ---
 
